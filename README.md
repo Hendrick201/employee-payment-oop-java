@@ -38,3 +38,51 @@ src/
 │   ├── Employee.java            # Classe base de funcionário
 │   └── OutsourcedEmployee.java  # Funcionário terceirizado
 └── Program.java                 # Classe principal
+
+# 📥 CLONAGEM E TESTE DO PROJETO
+
+## 🔧 PRÉ-REQUISITOS
+```bash
+- Java JDK 11+ instalado
+- Git (opcional para clonar)
+- Terminal/CMD funcionando
+
+🚀 PASSO A PASSO COMPLETO
+
+1️⃣ CLONAR REPOSITÓRIO
+git clone https://github.com/Hendrick201/employee-payment-oop-java.git
+cd employee-payment-oop-java
+
+2️⃣ VERIFICAR ESTRUTURA
+Certifique-se que tem esses arquivos:
+src/
+├── entities/
+│   ├── Employee.java
+│   └── OutsourcedEmployee.java
+└── Program.java
+
+3️⃣ COMPILAR PROJETO
+# Compilar tudo
+javac src/entities/*.java src/Program.java -d out/
+
+🧪 TESTES MANUAIS
+TESTE 1 - FUNCIONÁRIO NORMAL
+Entradas:
+Nome: João
+Horas: 40
+Valor/hora: 50
+Terceirizado? n
+
+Saída esperada:
+João - $2000.00
+
+TESTE 2 - FUNCIONÁRIO TERCEIRIZADO
+Entradas:
+Nome: Maria
+Horas: 40
+Valor/hora: 50
+Terceirizado? y
+Adicional: 100
+
+Saída esperada:
+Maria - $2110.00
