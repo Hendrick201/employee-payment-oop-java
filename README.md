@@ -38,6 +38,7 @@ src/
 │   ├── Employee.java            # Classe base de funcionário
 │   └── OutsourcedEmployee.java  # Funcionário terceirizado
 └── Program.java                 # Classe principal
+```
 
 # 📥 CLONAGEM E TESTE DO PROJETO
 
@@ -46,6 +47,7 @@ src/
 - Java JDK 11+ instalado
 - Git (opcional para clonar)
 - Terminal/CMD funcionando
+```
 
 🚀 PASSO A PASSO COMPLETO
 
