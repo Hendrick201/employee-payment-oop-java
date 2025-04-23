@@ -1,32 +1,56 @@
-# employee-payment-oop-java
-Projeto em Java desenvolvido para praticar conceitos de orientação a objetos como herança, polimorfismo e sobrescrita de métodos.
+# Employee Payment System - OOP Java 💰
 
-# Employee Payment OOP Java
+![Java](https://img.shields.io/badge/Java-17%2B-blue?logo=java)
+![OOP](https://img.shields.io/badge/OOP-Implemented-success)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-## Descrição
+Projeto em Java desenvolvido para praticar conceitos avançados de orientação a objetos como herança, polimorfismo e sobrescrita de métodos em um sistema de pagamento de funcionários.
 
-Este projeto foi desenvolvido para demonstrar o uso de **Programação Orientada a Objetos (POO)** em Java no gerenciamento de pagamentos de funcionários. O sistema simula um sistema de pagamento para uma empresa, onde é possível calcular o pagamento de funcionários de diferentes tipos e cargos, como salários, comissões, e bônus.
+## 📌 Visão Geral
 
-O código segue os princípios da POO para garantir um design modular e de fácil manutenção.
+Sistema de gerenciamento de pagamentos que demonstra:
+- Hierarquia de classes de funcionários
+- Cálculos de pagamento polimórficos
+- Boas práticas de encapsulamento
+- Design extensível para novos tipos de funcionários
 
-## Funcionalidades
+## 🚀 Funcionalidades Principais
 
-- Cadastro de funcionários
-- Cálculo de pagamento para diferentes tipos de empregados (salário fixo, comissões, etc.)
-- Exibição do resumo de pagamento dos funcionários
-- Utilização de herança, polimorfismo e encapsulamento para organização do código
+✔️ Cadastro de diferentes tipos de funcionários  
+✔️ Cálculo automático de pagamentos  
+✔️ Geração de relatórios de pagamento  
+✔️ Implementação dos 4 pilares da OOP  
 
-## Tecnologias Utilizadas
+### Tipos de Funcionários Implementados
+- **Assalariados** (salário fixo)
+- **Gerentes** (salário + bônus)
+- **Vendedores** (comissão por vendas)
 
-- **Java** (para o desenvolvimento do sistema)
-- **Programação Orientada a Objetos** (POO)
-  - Herança
-  - Polimorfismo
-  - Encapsulamento
-- **JUnit** (para testes unitários, caso aplicável)
+## 🛠️ Tecnologias Utilizadas
 
-## Estrutura do Projeto
+| Categoria       | Tecnologias/Conceitos                          |
+|-----------------|-----------------------------------------------|
+| Linguagem       | Java 17+                                      |
+| Paradigma       | Programação Orientada a Objetos               |
+| Princípios OOP  | Herança, Polimorfismo, Encapsulamento, Abstração |
+| Ferramentas     | JUnit (testes), Git (controle de versão)      |
 
-O projeto é composto por várias classes, cada uma responsável por uma parte específica do sistema. Abaixo está a estrutura básica do projeto:
+## 🗂️ Estrutura do Projeto
 
-
+```bash
+src/
+├── main/
+│   ├── java/
+│   │   ├── model/
+│   │   │   ├── Employee.java          # Classe base abstrata
+│   │   │   ├── SalariedEmployee.java  # Assalariados
+│   │   │   ├── Manager.java           # Gerentes
+│   │   │   └── SalesPerson.java       # Vendedores
+│   │   ├── service/
+│   │   │   └── PaymentService.java    # Lógica de cálculo
+│   │   └── Main.java                  # Aplicação principal
+│   └── resources/
+└── test/
+    ├── java/
+    │   └── unit/                      # Testes unitários
+    └── resources/
