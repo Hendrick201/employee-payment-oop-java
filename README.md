@@ -1,65 +1,70 @@
-# Sistema de Pagamento de Funcionários - Java OOP 💼💰
+# Employee Payment System - Java OOP 💼💰
 
 ![Java](https://img.shields.io/badge/Java-11%2B-blue?logo=java)
-![OOP](https://img.shields.io/badge/OOP-Herança%2FPolimorfismo-success)
+![OOP](https://img.shields.io/badge/OOP-Inheritance%2FPolymorphism-success)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-Sistema de cálculo de pagamentos para funcionários regulares e terceirizados, demonstrando conceitos de Programação Orientada a Objetos em Java.
+A payment calculation system for regular and outsourced employees, demonstrating Object-Oriented Programming concepts in Java.
 
-## 📌 Visão Geral
+## 📌 Overview
 
-Sistema que permite:
-- Cadastro de funcionários (regulares e terceirizados)
-- Cálculo automático de pagamentos
-- Sobrescrita de métodos para cálculo especializado
-- Listagem de pagamentos
+The system allows:
 
-## 🚀 Funcionalidades
+* Registration of employees (regular and outsourced)
+* Automatic payment calculation
+* Method overriding for specialized calculations
+* Listing of payments
 
-✔️ Cadastro de funcionários regulares e terceirizados  
-✔️ Cálculo polimórfico de pagamentos  
-✔️ Diferença no cálculo para funcionários terceirizados (+10% na adicional)  
-✔️ Listagem formatada dos pagamentos  
+## 🚀 Features
 
-## 🛠️ Tecnologias Utilizadas
+✔️ Registration of regular and outsourced employees
+✔️ Polymorphic payment calculation
+✔️ Different calculation for outsourced employees (+10% additional fee)
+✔️ Formatted payment listing
 
-- **Java 11+**
-- **POO Concepts**:
-  - Herança (`OutsourcedEmployee extends Employee`)
-  - Polimorfismo (`@Override` no método `payment()`)
-  - Encapsulamento (atributos privados com getters/setters)
-- **Entrada/Saída** com `Scanner` e `Locale`
+## 🛠️ Technologies Used
 
-## 🗂️ Estrutura do Projeto
+* **Java 11+**
+* **OOP Concepts**:
+
+  * Inheritance (`OutsourcedEmployee extends Employee`)
+  * Polymorphism (`@Override` in the `payment()` method)
+  * Encapsulation (private attributes with getters/setters)
+* **Input/Output** using `Scanner` and `Locale`
+
+## 🗂️ Project Structure
 
 ```bash
 src/
 ├── entities/
-│   ├── Employee.java            # Classe base de funcionário
-│   └── OutsourcedEmployee.java  # Funcionário terceirizado
-└── Program.java                 # Classe principal
+│   ├── Employee.java            # Base employee class
+│   └── OutsourcedEmployee.java  # Outsourced employee class
+└── Program.java                 # Main class
 ```
 
-# 📥 CLONAGEM E TESTE DO PROJETO
+# 📥 Cloning and Running the Project
 
-## 🔧 PRÉ-REQUISITOS
+## 🔧 Prerequisites
+
 ```bash
-- Java JDK 11+ instalado
-- Git (opcional para clonar)
-- Terminal/CMD funcionando
+- Java JDK 11+ installed
+- Git (optional for cloning)
+- Terminal/CMD access
 ```
 
-🚀 PASSO A PASSO COMPLETO
+## 🚀 Step-by-Step Instructions
 
-1️⃣ CLONAR REPOSITÓRIO
-```
+1️⃣ CLONE THE REPOSITORY
+
+```bash
 git clone https://github.com/Hendrick201/employee-payment-oop-java.git
 cd employee-payment-oop-java
 ```
 
-2️⃣ VERIFICAR ESTRUTURA
-```
-Certifique-se que tem esses arquivos:
+2️⃣ VERIFY THE STRUCTURE
+
+```bash
+Make sure these files exist:
 src/
 ├── entities/
 │   ├── Employee.java
@@ -67,34 +72,38 @@ src/
 └── Program.java
 ```
 
-3️⃣ COMPILAR PROJETO
-# Compilar tudo
-```
+3️⃣ COMPILE THE PROJECT
+
+```bash
+# Compile all files
 javac src/entities/*.java src/Program.java -d out/
 ```
 
-🧪 TESTES MANUAIS
-TESTE 1 - FUNCIONÁRIO NORMAL
+🧪 MANUAL TESTS
+
+**TEST 1 - REGULAR EMPLOYEE**
+
 ```
-Entradas:
-Nome: João
-Horas: 40
-Valor/hora: 50
-Terceirizado? n
+Input:
+Name: João
+Hours: 40
+Hourly Rate: 50
+Outsourced? n
 ```
 
-Saída esperada:
+Expected Output:
 João - $2000.00
 
-TESTE 2 - FUNCIONÁRIO TERCEIRIZADO
+**TEST 2 - OUTSOURCED EMPLOYEE**
+
 ```
-Entradas:
-Nome: Maria
-Horas: 40
-Valor/hora: 50
-Terceirizado? y
-Adicional: 100
+Input:
+Name: Maria
+Hours: 40
+Hourly Rate: 50
+Outsourced? y
+Additional: 100
 ```
 
-Saída esperada:
+Expected Output:
 Maria - $2110.00
